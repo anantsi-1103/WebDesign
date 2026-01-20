@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- action -> form submit -> action pr redirecrt krloge -->
+    <form action="/server">
+        <!-- box ka naam -->
+        <label for="usern">Username: </label>
+        <!-- box -->
+        <input type="text" id="usern" required placeholder="username here!!!!">
+
+        <br>
+        <br>
+
+        <label for="pass">Password: </label>
+        <input type="password" id="pass" required placeholder="password here!!!!">
+
+        <br>
+        <br>
+
+        <!-- old way hai -->
+        <!-- <input type="submit" value="Login"> -->
+        <button type="submit">Login</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <hr>
+    <form action="">
+
+        <input type="number">
+        <br>
+        <input type="date">
+        <br>
+        <input type="time">
+        <br>
+        <input type="datetime-local">
+        <br>
+        <input type="file">
+        <br>
+        <input type="color">
+        <br>
+        <input type="range" step="10" min="10" max="100">
+        <br>
+    </form>
+
+    <hr>
+
+    <h2>Add to cart</h2>
+    <form action="">
+        <label for="mango">Mango</label>
+        <input type="checkbox" id="mango" checked disabled>
+
+        <label for="orange">Orange</label>
+        <input type="checkbox" id="orange">
+
+        <label for="Grapes">Grapes</label>
+        <input type="checkbox" id="Grapes" disabled>
+
+        <label for="Litchi">Litchi</label>
+        <input type="checkbox" id="Litchi">
+
+        <hr>
+<!-- review -> star -> radio ->  -->
+        <label for="mango1">Mango</label>
+        <input type="radio" id="mango1" name="fruit">
+
+        <label for="orange1">Orange</label>
+        <input type="radio" id="orange1" name="fruit">
+
+        <label for="Grapes1">Grapes</label>
+        <input type="radio" id="Grapes1" name="fruit" >
+
+        <label for="Litchi1">Litchi</label>
+        <input type="radio" id="Litchi1" name="fruit">
+    </form>
+
+    <hr>
+
+    <h3>Select Your State</h3>
+    <select>
+        <option selected> </option>
+        <option>UP</option>
+        <option>MP</option>
+        <option>HR</option>
+        <option>CD</option>
+        <option>CG</option>
+        <option>MH</option>
+    </select>
+    <hr>
+    <!-- feeback - remark - review ->  -->
+
+    <textarea placeholder="remark us" rows="10" cols="40" ></textarea>
+</body>
+
+</html>
