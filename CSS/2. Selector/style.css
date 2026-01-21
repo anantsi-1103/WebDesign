@@ -1,0 +1,84 @@
+/* Universal Selector - all over page pr apply hoga - '*' */
+/* * {
+    background-color: black;
+    color: white;
+} */
+
+/* Element Selector -> tag , element - element  - ek element multiple time hai
+toh saare element pr property apply hojaegi
+
+Element > Universal */
+h1 {
+    color: red;
+}
+
+/* Class Selector -> HTML code -> Class ko define krdoge ->  class ki value hogi us 
+value ko ap css m use kroge -> .classValue
+
+Class > element > Universal 
+*/
+.sp {
+    color: blue;
+}
+
+/* ID Selector ->HTML code -> id ko define krdoge ->  id ki value hogi us 
+value ko ap css m use kroge -> #idvalue 
+
+id > class > element > universal */
+#demo {
+    color: mediumspringgreen;
+}
+
+/* attribute selector - form ->  */
+input[type="text"] {
+    background-color: red;
+}
+
+input[type="password"] {
+    background-color: green;
+}
+
+#c2 {
+    background-color: orange;
+}
+
+input {
+    color: red;
+    background: green;
+}
+
+
+/* Descendent Selector ->  */
+a{
+    color: red;
+}
+
+#un{
+    color: blue;
+}
+
+/* child combinator  */
+ul li a{
+    color: violet;
+    text-decoration: none;
+}
+
+
+h1{
+    background-color: green !important;
+    text-align: center;
+}
+
+h1{
+    background-color: red;
+    text-align: right;
+}
+
+h1{
+    background-color: violet;
+    
+
+}
+
+
+/* pseudo class  - hover , check , active ,nth-of-type, pseudo element - firstline, selection , firstLetter  - box model */
