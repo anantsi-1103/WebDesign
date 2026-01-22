@@ -8,9 +8,9 @@
 toh saare element pr property apply hojaegi
 
 Element > Universal */
-h1 {
+/* h1 {
     color: red;
-}
+} */
 
 /* Class Selector -> HTML code -> Class ko define krdoge ->  class ki value hogi us 
 value ko ap css m use kroge -> .classValue
@@ -28,8 +28,10 @@ id > class > element > universal */
 #demo {
     color: mediumspringgreen;
 }
+/* (1,0,0) */
 
 /* attribute selector - form ->  */
+/* 0,1,1 */
 input[type="text"] {
     background-color: red;
 }
@@ -49,22 +51,23 @@ input {
 
 
 /* Descendent Selector ->  */
-a{
+/* a{
     color: red;
 }
 
 #un{
     color: blue;
-}
+} */
 
 /* child combinator  */
-ul li a{
+ul li a {
     color: violet;
     text-decoration: none;
 }
+/* 0,0,3 */
 
 
-h1{
+/* h1{
     background-color: green !important;
     text-align: center;
 }
@@ -78,7 +81,73 @@ h1{
     background-color: violet;
     
 
+} */
+
+
+/* pseudo class  - hover(cursor lejana) ,active(click) , check(checkbox/radio)  ,nth-of-type
+Selector chaeieye -> selector : pseudo class
+pseudo element - firstline, selection , firstLetter  - 
+Selector Specificity 
+box model */
+
+
+h1:hover {
+    color: red;
+}
+/* 0,1,1 */
+
+button:hover {
+    color: green;
+    background-color: yellow;
 }
 
 
-/* pseudo class  - hover , check , active ,nth-of-type, pseudo element - firstline, selection , firstLetter  - box model */
+h1:active {
+    color: green;
+}
+
+button:active {
+    background-color: blue;
+}
+
+/* sibling combinator */
+input[type="radio"]:checked+label {
+    color: red;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* nth-of-type */
+
+h2 {
+    background-color: blue;
+}
+/* hr second position pr mera light blue laga do  */
+h2:nth-of-type(3n) {
+    background-color: lightblue;
+}
+
+/* Psuedo Element -> ::  */
+
+h3::first-letter{
+    color: red;
+}
+/* 0,0,2 */
+
+/* p::first-line{
+    background-color: blueviolet;
+} */
+
+span{
+    background-color: blueviolet;
+}
+
+p::selection{
+    background-color: black;
+    color: white;
+}
+
+/* descendent ->  */
+/* #main .demo a li b{
+
+} */
