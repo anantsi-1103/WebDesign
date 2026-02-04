@@ -46,6 +46,59 @@
 // alert -> 
 // alert("Something went wrong")
 
-console.log("Normal display")
-console.warn("Warning")
-console.error("error")
+// console.log("Normal display")
+// console.warn("Warning")
+// console.error("error")
+
+
+// user define 
+
+// let a = prompt("Enter your A Value : ")
+// console.log(a)
+
+// be default - string 
+// 10 , 10 
+
+//  10 -> 10.0 , 14.5 - 14.5
+// let a = (prompt("Enter a Value"))
+// let b = (prompt("Enter b Value"))
+// let sum = a+b
+// console.log(sum)
+
+// let a = parseInt(prompt("Enter your First number!"))
+// let b = parseInt(prompt("Enter your Second number!"))
+// let c = parseInt(prompt("Enter your Third number!"))
+// let d = parseInt(prompt("Enter your Fourth number!"))
+// let e = parseInt(prompt("Enter your Fifth number!"))
+
+// let sum = a+b+c+d+e
+
+// console.log(`Your sum of 5 number is ${sum}`)
+
+// let avg = sum / 5
+
+// console.log(`Your avg of ${sum}  is ${avg}`)
+
+
+// Operators
+
+// let a = parseInt(prompt("Enter your First number!"))
+// let b = parseInt(prompt("Enter your Second number!"))
+
+// console.log(`a+b is ${a + b}`)
+// console.log(`a-b is ${a - b}`)
+// console.log(`a/b is ${a / b}`)
+// console.log(`a*b is ${a * b}`)
+// console.log(`a%b is ${a % b}`)
+
+
+// console.log(`a > b is ${a>b}`)
+// console.log(`a < b is ${a<b}`)
+// console.log(`a >= b is ${a>=b}`)
+// console.log(`a <= b is ${a<=b}`)
+// console.log(`a == b is ${a==b}`)
+// console.log(`a != b is ${a!=b}`)
+
+
+// let info = "Aman"
+// console.log(info.length)
