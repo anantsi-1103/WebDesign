@@ -1,0 +1,85 @@
+div {
+    height: 100px;
+    width: 200px;
+    background-color: beige;
+    border: 2px solid black;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    /* animation -> selector -> 
+
+                animation-name 
+                animation-duration - from se to tk ka rasta
+                animation-delay - pause
+                animation-timingfunction - smoothness
+        animation-count
+        animation-direction  -> normal, alternate, reverse, alternate-reverse
+        
+        /* * */
+
+
+    /* animation-name: FontAnimation;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+    animation: AllAnimation 2s infinite ease-in-out alternate ;
+}
+
+
+@keyframes FontAnimation {
+
+    /* logic ->  */
+    from {
+        /* intial  */
+        font-size: 30px;
+    }
+
+    to {
+        /* final  */
+        font-size: 60px;
+    }
+}
+
+
+@keyframes AllAnimation {
+    0% {
+        width: 200px;
+        color: black ;
+        background-color:beige ;
+        font-size: 30px ;
+    }
+
+    25% {
+        width: 300px;
+        color: violet ;
+        background-color:red ;
+        font-size: 40px ;
+        height:200px ;
+    }
+
+    50% {
+        width: 400px;
+        color: orange ;
+        background-color:black ;
+        font-size: 50px ;
+    }
+
+    75% {
+        width: 500px;
+        color: green ;
+        background-color:yellow ;
+        font-size: 60px ;
+    }
+
+    100% {
+        width: 600px;
+        color: blue ;
+        background-color: pink  ;
+        font-size: 70px ;
+    }
+}
