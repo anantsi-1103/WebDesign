@@ -88,14 +88,12 @@ nav {
 
 
 /* hero-Slider */
-
 .slider-container {
     position: relative;
     height: 100vh;
     margin-top: 0;
     overflow: hidden;
 }
-
 
 .slide {
     position: absolute;
@@ -108,7 +106,6 @@ nav {
     justify-content: center;
 }
 
-
 .slide.active {
     opacity: 1;
 }
@@ -118,14 +115,12 @@ nav {
     width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 5rem;
     align-items: center;
-    animation: fadeinUp 1s ease-in-out;
-
+    animation: fadeInUp 1s ease-out;
 }
 
-
-@keyframes fadeinUp {
+@keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(40px);
@@ -133,32 +128,27 @@ nav {
 
     to {
         opacity: 1;
-        transform: translateY(40px);
-
+        transform: translateY(0);
     }
 }
 
 .slide-text h1 {
-    font-family: "Playfair Display", serif;
-    /* 1rem = 16px */
+    font-family: 'Playfair Display', serif;
     font-size: 5rem;
     font-weight: 900;
-    line-height: 1;
-    margin-bottom: 20px;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
     color: var(--primary);
-    animation: fadeinUp 1s ease;
+    animation: fadeInUp 1s ease-out 0.2s both;
 }
 
 .slide-text p {
-    font-family: "Playfair Display", serif;
-    /* 1rem = 16px */
     font-size: 1.2rem;
-    line-height: 1.5;
-    margin-bottom: 30px;
+    line-height: 1.8;
     color: var(--light-text);
-    animation: fadeinUp 1s ease;
+    margin-bottom: 2.5rem;
+    animation: fadeInUp 1s ease-out 0.4s both;
 }
-
 
 .cta-button {
     display: inline-block;
@@ -200,7 +190,7 @@ nav {
 .slide-image {
     position: relative;
     height: 600px;
-    animation: fadeInRight 1s ease-out 0.4s both ;
+    animation: fadeInRight 1s ease-out 0.4s both;
 }
 
 @keyframes fadeInRight {
@@ -224,17 +214,17 @@ nav {
     overflow: hidden;
 }
 
-.slide:nth-of-type(2).image-wrapper{
-       background: linear-gradient(135deg, rgb(72, 220, 102) 0%, rgb(195, 147, 70) 100%);
+.slide:nth-of-type(2).image-wrapper {
+    background: linear-gradient(135deg, rgb(72, 220, 102) 0%, rgb(195, 147, 70) 100%);
 
 }
 
-.slide:nth-of-type(3).image-wrapper{
-       background: linear-gradient(135deg, rgb(182, 91, 71) 0%, rgb(187, 70, 195) 100%);
+.slide:nth-of-type(3).image-wrapper {
+    background: linear-gradient(135deg, rgb(182, 91, 71) 0%, rgb(187, 70, 195) 100%);
 
 }
 
-.image-overlay{
+.image-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -250,16 +240,16 @@ nav {
     font-weight: 900;
 }
 
-.slider-controls{
+.slider-controls {
     position: absolute;
     bottom: 7%;
     right: 5%;
     display: flex;
     gap: 15px;
-    z-index:10 ;
+    z-index: 10;
 }
 
-.control-btn{
+.control-btn {
     width: 60px;
     height: 60px;
     border: 2px solid var(--primary);
@@ -273,14 +263,14 @@ nav {
     transition: all 0.3s ease;
 }
 
-.control-btn:hover{
+.control-btn:hover {
     background: var(--primary);
     color: var(--secondary);
     transform: scale(1.1);
 }
 
 /* slider indicator */
-.slider-indicators{
+.slider-indicators {
     position: absolute;
     bottom: 7%;
     left: 5%;
@@ -289,7 +279,7 @@ nav {
     z-index: 1;
 }
 
-.indicator{
+.indicator {
     width: 50px;
     height: 3px;
     background: rgba(11, 11, 11, 0.221);
@@ -297,7 +287,7 @@ nav {
     transition: all 0.3s ease;
 }
 
-.indicator.active{
+.indicator.active {
     background: var(--accent);
     width: 80px;
 }
@@ -305,43 +295,43 @@ nav {
 
 /* features */
 
-.features{
-    padding:60px 5%;
+.features {
+    padding: 60px 5%;
     background: var(--primary);
     color: var(--secondary);
 }
 
-.features-grid{
+.features-grid {
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-top: 40px;
 }
 
-.feature-card{
+.feature-card {
     text-align: center;
     padding: 3rem;
     border: 1px solid rgba(255, 255, 255, 0.15);
     transition: all 0.4s ease;
 }
 
-.feature-card:hover{
+.feature-card:hover {
     border-color: var(--accent);
     transform: translateY(-10px);
     background: rgba(218, 205, 205, 0.152);
 }
 
-.feature-icon{
-     
-     font-size: 50px;
-     margin-bottom: 20px;
+.feature-icon {
+
+    font-size: 50px;
+    margin-bottom: 20px;
 
 }
 
 
-.feature-card h3{
+.feature-card h3 {
     font-family: "Playfair Display", serif;
     font-size: 28px;
     margin-bottom: 30px;
@@ -349,36 +339,14 @@ nav {
 }
 
 
-.feature-card p{
+.feature-card p {
     color: rgba(239, 236, 236, 0.763);
     line-height: 1.5;
 }
 
-.section-title{
+.section-title {
     font-family: "Playfair Display", serif;
     text-align: center;
     font-size: 50px;
     font-weight: 900;
-}
-
-/* responsive  */
-@media screen and (max-width: 960px){
-    .nav-links{
-        gap: 20px ;
-    }
-
-    .slide-content{
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        text-align: center;
-    }
-
-    .slide-text h1{
-        font-size: 50px;
-    }
-
-    .feature-card{
-         grid-template-columns: 1fr;
-         gap: 2rem;
-    }
 }
