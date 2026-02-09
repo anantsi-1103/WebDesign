@@ -91,7 +91,7 @@
 // console.log(`a*b is ${a * b}`)
 // console.log(`a%b is ${a % b}`)
 
-
+// relational -> 
 // console.log(`a > b is ${a>b}`)
 // console.log(`a < b is ${a<b}`)
 // console.log(`a >= b is ${a>=b}`)
@@ -102,3 +102,6 @@
 
 // let info = "Aman"
 // console.log(info.length)
+
+
+let a = parseInt(prompt("Enter your number"))
