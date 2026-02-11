@@ -418,22 +418,71 @@
 
 // Armstrong number - 
 // 153 ->  1^3 + 5^3 + 3^3 = 153 
-let n = 1532
+// let n = 1532
 
-let temp = n // 153 15 1
-let sum = 0 // 0 27 152 153
-while (temp != 0) { // T T T
+// let temp = n // 153 15 1
+// let sum = 0 // 0 27 152 153
+// while (temp != 0) { // T T T
 
-    let rem = temp % 10 // 1/10 = 1
-    sum = sum + rem ** 3 // sum = 152 + 1  
-    temp = parseInt(temp/10) // 1/10 -> 0
-}
+//     let rem = temp % 10 // 1/10 = 1
+//     sum = sum + rem ** 3 // sum = 152 + 1  
+//     temp = parseInt(temp/10) // 1/10 -> 0
+// }
 
-if(sum == n){
-    console.log("Armstrong")
-}
-else{
-    console.log("Not a Armstrong")
-}
+// if(sum == n){
+//     console.log("Armstrong")
+// }
+// else{
+//     console.log("Not a Armstrong")
+// }
 
 // Pallindrome , fibonacci , 1,11,111,1111 -> Array -> Array method 
+
+// Pallindrome -> 12131 -> 13121 -> Reverse - logic wala reverse 
+
+// let n = 121
+
+// let temp = n // 121 12 1 0
+// let sum = 0 // 0 1 12 121
+// while (temp != 0) { // T T T
+
+//     let rem = temp % 10 // rem = 1%10 = 1
+//     sum = sum * 10 + rem // sum = 12 * 10 + 1 = 121
+//     temp = parseInt(temp/10) // 121/10 - 12/10 -> 1/10 -> 0
+// }
+
+// if(sum == n){
+//     console.log("Pallindrome")
+// }
+// else{
+//     console.log("Not a Pallindrome")
+// }
+
+
+// Fibonacci -> 0 1 
+// let n = 15
+// let a = 0
+// let b = 1
+
+// console.log(a)
+// console.log(b)
+
+// // iteration - step - 
+// for(let i = 2 ; i<= n ; i++){
+//     let c = a+b
+//     console.log(c)
+
+//     a = b 
+//     b = c
+// }
+
+// 1,11,111,1111,1111
+// let n = 6
+// let d = 0 //1  11 111 1111 11111
+// for(let i = 1 ; i<= n ; i++){
+    
+//     d = d * 10 + 1
+//     console.log(d)
+// }
+
+
