@@ -158,9 +158,9 @@
 
 // base case / kaam
 
-function sum_of_natural(n){ // 5
+function sum_of_natural(n) { // 5
     let sum = 0;
-    for(let i = 1 ; i<= n ; i++){
+    for (let i = 1; i <= n; i++) {
         sum = sum + i
     }
     return sum
@@ -169,16 +169,38 @@ function sum_of_natural(n){ // 5
 // var + loop n + hr iteration pr sum ki value ko lekr aa rhe or + plus bhi kr rhe ho
 
 
-function sum_rec(n){
+function sum_rec(n) {
     //base case 
-    if(n== 0){
+    if (n == 0) {
         return n
         // jo kaam bola woh krdo
         // isse phele jitna bhi call stack fill kra hai utna pura apko khali krna hoga
     }
     // kaam
-    return n + sum_rec(n-1)
+    return n + sum_rec(n - 1)
 
 }
 
-// fibo + asc + DOM 
+// fibo + asc + DOM
+
+
+
+function factorial(n) {
+    if (n == 1) {
+        return n
+    }
+
+    return n * factorial(n - 1);
+}
+
+
+// fibonacci -> 0 1 1 2 3 5
+
+function fibo(n) {
+    if (n == 1 || n == 0) {
+        return n
+    }
+    return fibo(n - 1) + fibo(n - 2)
+}
+
+console.log(fibo(6))
