@@ -1,20 +1,22 @@
 let currentSlide = 0;
-const slides = document.querySelectorAll(".slide")
-const indicators = document.querySelectorAll(".indicator")
 
-let autoslideInteral;
+const slides = document.querySelectorAll('.slide')
+const indicators = document.querySelectorAll('.indicator')
 
+let autoSlideInterval;
 
 function showSlide(n) {
     slides.forEach(slide => slide.classList.remove('active'))
-    indicators.forEach(indicator => indicator.classList.remove('active'))
+    indicators.forEach(indicators => indicators.classList.remove('active'))
 
     currentSlide = (n + slides.length) % slides.length
-    // 0 -> 3 + 3 % 3 = 6%3 = 0 -> 
+    // current = 1 + 3 % 3 => 0
 
     slides[currentSlide].classList.add('active')
     indicators[currentSlide].classList.add('active')
+
 }
+
 
 function nextSlide() {
     showSlide(currentSlide + 1)
@@ -22,37 +24,33 @@ function nextSlide() {
     resetAutoSlide()
 }
 
+
 function prevSlide() {
     showSlide(currentSlide - 1)
     // reset
     resetAutoSlide()
 }
-// auto matically -> 
+
 function autoSlide() {
-    autoslideInteral = setInterval(() => {
+    autoSlideInterval = setInterval(() => {
         nextSlide()
-    }, 3000)
+    }, 1000)
 }
 
 function resetAutoSlide() {
-    clearInterval(autoslideInteral);
-    autoSlide()
+    clearInterval(autoSlideInterval)
+    autoSlide();
 }
 
 autoSlide()
 
+// pause auto-slide on hover
+let slideContainer = document.querySelector(".slider-container")
 
-
-// jesi container pr hover kru vesi mera container ka interval pause hojaeye
-
-const sliderContainer = document.querySelector('.slider-container')
-
-sliderContainer.addEventListener('mouseenter', () => {
-    clearInterval(autoslideInteral)
+slideContainer.addEventListener('mouseenter', () => {
+    clearInterval(autoSlideInterval)
 })
 
-sliderContainer.addEventListener('mouseleave', () => {
+slideContainer.addEventListener('mouseleave', () => {
     autoSlide()
 })
-
-
