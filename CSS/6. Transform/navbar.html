@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Dropdown</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #333;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    .nav-links a:hover {
+      background: #555;
+    }
+
+    /* Dropdown Menu */
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background: #444;
+      min-width: 160px;
+      top: 40px;
+      left: 0;
+    }
+
+    .dropdown-menu li a {
+      padding: 10px;
+    }
+
+    /* Show dropdown on hover (desktop) */
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    /* Mobile Menu */
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  </style>
+
+  <nav class="navbar">
+    <div class="logo">MySite</div>
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+
+      <li class="dropdown">
+        <a href="#">Services ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">App Development</a></li>
+          <li><a href="#">SEO</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="menu-toggle" id="mobile-menu">
+      ☰
+    </div>
+  </nav>
+
+  <script>
+    const mobileMenu = document.getElementById("mobile-menu");
+    const navLinks = document.querySelector(".nav-links");
+
+    mobileMenu.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+
+</html>
