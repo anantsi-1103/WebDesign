@@ -2,6 +2,7 @@
 // p.innerText = "javascript"
 // $('p').text("javascript")
 
+// $(selector).action(callback)
 
 // hide 
 
@@ -47,30 +48,3 @@ $('.fadeToggle').click(() => {
 })
 
 
-$('.slideup').click(() => {
-    $('.container').slideUp(1000, () => {
-        console.log("slide Up done")
-    })
-})
-
-$('.slidedown').click(() => {
-    $('.container').slideDown(1000, () => {
-        console.log("slide Down done")
-    })
-})
-
-$('.slidetoggle').click(() => {
-    $('.container').slideToggle(1000, () => {
-        console.log("slide Toggle done")
-    })
-})
-
-
-$('.animate').click(() => {
-    $('.container').animate({
-        width: "+=50px",
-        height: "+=50px",
-        opacity: '-=0.2'
-        //1 - 0.8, 0.6,0.4,0.2,0
-    })
-})
