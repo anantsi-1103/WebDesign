@@ -1,7 +1,5 @@
 // que-ans
 // que-title
-
-
 $(document).ready(function(){
     
     $('.que-title').click(function(){
@@ -12,6 +10,4 @@ $(document).ready(function(){
         // slide toggle - up and down
         $(this).next('.que-ans').slideToggle()
     })
-
-
 })
