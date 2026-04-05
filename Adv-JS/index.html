@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <form id="productForm">
 
-    <h3 id="heading"></h3>
-    <h4 id="price"></h4>
+        <input type="number" id="productId" placeholder="Enter your Product ID" required>
 
-    <button id="btn">Get Data</button>
+        <button type="submit">Get Product</button>
+    </form>
+    <h2 class="id"></h2>
+    <h3 class="name"></h3>
+    <p class="des"></p>
+    <h3 class="price"></h3>
+    <img src="" alt="" class="img" width="200" height="200">
 
-
-
-    
-    <script src="fetch.js"></script>
+    <script src="fetch_api.js"></script>
 </body>
+
 </html>
